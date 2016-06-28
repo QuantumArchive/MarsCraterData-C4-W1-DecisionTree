@@ -117,5 +117,3 @@ out = BytesIO()
 tree.export_graphviz(classifier, out_file=out)
 graph=pydotplus.graph_from_dot_data(out.getvalue())
 Image(graph.create_png())
-
-get_ipython().system(u'nbpython to python ')
